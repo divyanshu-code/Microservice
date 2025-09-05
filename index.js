@@ -41,3 +41,13 @@ app.listen(4000 , ()=>{
 // to solve this problem we use microservices where we make a differ differ service for differ route like in this case for "/stress" make stress.service.js and same for    "/" route.
 
 // gateway.service for connecting the both two services in single server.      install ( npm i express-http-proxy )
+
+// synchronus communications **************************
+
+// the commnications held between the services where one services depend on other services. 
+// like  for creating ride in uber clone we need logged in user . so we have to check for loggedin user for this we want user data and token .here we get the data through axios from user which is good but here is one problem that the ride now totally depend on user . if user get stucked then ride also get stucked .
+
+
+// RabbitMQ *************************
+
+// it is a message broker which is used to connect all different microservices for asynchronous communications.
